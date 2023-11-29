@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryCaffeTracker"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="vertical"
+        android:background="@drawable/header2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/caffeindwhite"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Caffe-Tracker"
+            android:textSize="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="#E6E6E6"
+        android:background="@drawable/background">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/background1"
+                        android:backgroundTint="@color/primary">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GRAFIK KONSUMSI KOPIMU"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="19dp"/>
+
+
+                    </LinearLayout>
+
+                    <!-- Riwayat kopi -->
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal"
+                                android:gravity="start"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/kopi_in_touch_speciality_fococlipping_standard"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:id="@+id/tvnamakopi"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#BF3148"
+                                        android:textSize="20dp"
+                                        android:text="KOPinTOUCH Speciality"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvtanggal"
+                                        android:textSize="14dp"
+                                        android:text="Minggu, 26 November 2023"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvquantity"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• 1 Cup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvserve"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Cold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvsugar"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Normal Sugar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+
+
+
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/tvkafein"
+                                        android:textSize="14dp"
+                                        android:text="Kafein      : 168 mg"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvglukosa"
+                                        android:textSize="14dp"
+                                        android:text="Glukosa   : 7.5 g"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <Button
+                                        android:layout_gravity="end"
+                                        android:gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:text="Delete"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal"
+                                android:gravity="start"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/espresso"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:id="@+id/tvnamakopi"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#BF3148"
+                                        android:textSize="20dp"
+                                        android:text=" Espresso"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvtanggal"
+                                        android:textSize="14dp"
+                                        android:text="Minggu, 26 November 2023"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvquantity"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• 1 Cup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvserve"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Cold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvsugar"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Normal Sugar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+
+
+
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/tvkafein"
+                                        android:textSize="14dp"
+                                        android:text="Kafein      : 120 mg"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvglukosa"
+                                        android:textSize="14dp"
+                                        android:text="Glukosa   : 0 g"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <Button
+                                        android:layout_gravity="end"
+                                        android:gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:text="Delete"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal"
+                                android:gravity="start"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/caramelmacchiato"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:id="@+id/tvnamakopi"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#BF3148"
+                                        android:textSize="20dp"
+                                        android:text="Caramel Macchiato"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvtanggal"
+                                        android:textSize="14dp"
+                                        android:text="Minggu, 26 November 2023"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvquantity"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• 1 Cup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvserve"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Cold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvsugar"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Normal Sugar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+
+
+
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/tvkafein"
+                                        android:textSize="14dp"
+                                        android:text="Kafein      : 160 mg"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvglukosa"
+                                        android:textSize="14dp"
+                                        android:text="Glukosa   : 10 g"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <Button
+                                        android:layout_gravity="end"
+                                        android:gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:text="Delete"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:orientation="horizontal"
+                                android:gravity="start"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp">
+                                <ImageView
+                                    android:id="@+id/image1"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/kopi_in_touch_speciality_fococlipping_standard"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_gravity="center">
+                                    <TextView
+                                        android:id="@+id/tvnamakopi"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:textStyle="bold"
+                                        android:textColor="#BF3148"
+                                        android:textSize="20dp"
+                                        android:text="KOPinTOUCH Speciality"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvtanggal"
+                                        android:textSize="14dp"
+                                        android:text="Senin, 27 November 2023"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/tvquantity"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• 1 Cup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvserve"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Cold"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/tvsugar"
+                                            android:layout_weight="1"
+                                            android:textSize="14dp"
+                                            android:text="• Normal Sugar"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        </TextView>
+
+
+
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/tvkafein"
+                                        android:textSize="14dp"
+                                        android:text="Kafein      : 168 mg"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/tvglukosa"
+                                        android:textSize="14dp"
+                                        android:text="Glukosa   : 7.5 g"
+                                        android:textStyle="bold"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                                    </TextView>
+                                    <Button
+                                        android:layout_gravity="end"
+                                        android:gravity="center"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textStyle="bold"
+                                        android:text="Delete"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- nav -->
+            <LinearLayout
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="#80FFFFFF"
+                android:background="#80FFFFFF">
+                <LinearLayout
+                    android:id="@+id/qr"
+                    android:layout_width="80dp"
+                    android:elevation="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="-50dp">
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/backgroundcircular"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/qr_code" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background"
+                        android:backgroundTint="@color/white">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background"
+                            android:backgroundTint="#FFFFFF"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp">
+
+                            <LinearLayout
+                                android:id="@+id/home"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/home" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Home"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/summary"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/summary_list" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Summary"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/QR"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Scan QR"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/forum"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="35dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/forum" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Forum"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/profile"
+                                android:layout_width="70dp"
+                                android:layout_height="80dp"
+
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/background1"
+                                android:backgroundTint="#FFFFFF"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="32dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/profile" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Profile"
+                                    android:textAlignment="center"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

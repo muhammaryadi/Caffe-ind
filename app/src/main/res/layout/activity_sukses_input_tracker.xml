@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuksesInputTracker"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/watermark_coffee"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:background="@drawable/trackersucces3d"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="@drawable/background"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caffe-Tracker sukses"
+                android:textAlignment="center"
+                android:textColor="#BF3148"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Selamat memulai perjalanan kamu dengan Caffe-Tracker! Yuk lihat summarymu!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22dp"/>
+
+            <Button
+                android:id="@+id/btnbackhomesukses"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background1"
+                android:backgroundTint="#F2C029"
+                android:text="Kembali ke Home"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

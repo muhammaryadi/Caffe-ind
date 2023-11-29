@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:background="@drawable/background1"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/kopi_in_touch_speciality_fococlipping_standard"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tvnamakopi"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="#BF3148"
+                android:textSize="20dp"
+                android:text="KOPinTOUCH Speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/tvtanggal"
+                android:textSize="14dp"
+                android:text="Senin, 29 September 2023"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvquantity"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="• 1 Cup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvserve"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="• Cold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/tvsugar"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:text="• Normal Sugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvkafein"
+                android:textSize="14dp"
+                android:text="Kafein      : 160 mg"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:id="@+id/tvglukosa"
+                android:textSize="14dp"
+                android:text="Glukosa   : 10 g"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Button
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Delete"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

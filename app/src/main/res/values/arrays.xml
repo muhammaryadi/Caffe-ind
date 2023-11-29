@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_list" >
+        <item>Hot</item>
+        <item>Cold</item>
+    </string-array>
+</resources>

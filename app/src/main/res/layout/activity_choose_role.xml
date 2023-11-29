@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseRole"
+    android:background="@color/primary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/watermark_coffee">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:src="@drawable/choose_role"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Masuk sebagai?"
+                android:textColor="#BF3148"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30dp">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Apakah kamu akan menjadi Konsumen yang mengontrol konsumsimu di setiap cangkir kopi, atau admin yang mengendalikan aplikasi."
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp">
+            </TextView>
+            <Button
+                android:id="@+id/choosekonsumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/background1"
+                android:backgroundTint="#F2C029"
+                android:textSize="18dp"
+                android:text="Konsumen"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+            </Button>
+            <Button
+                android:id="@+id/chooseadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/background1"
+                android:backgroundTint="@color/primary"
+                android:textSize="18dp"
+                android:text="Admin"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+            </Button>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

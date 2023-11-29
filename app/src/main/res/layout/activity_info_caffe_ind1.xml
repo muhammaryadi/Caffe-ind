@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoCaffeInd1"
+    android:background="@color/primary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/watermark_coffee">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:src="@drawable/info1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:background="@drawable/caffeindred"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Caffe-Ind, menyediakan kemudahan dalam monitoring kansumsi kopimu. Catat menu kopi yang kamu pesan di KOPinTOUCH, dan dapatkan informasi konsumsi kafein dan gulamu"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18dp">
+            </TextView>
+            <Button
+                android:id="@+id/started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/background1"
+                android:backgroundTint="#F2C029"
+                android:textSize="15dp"
+                android:text="Let's get started"
+                android:textColor="@color/white">
+            </Button>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun?"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:textSize="15dp"
+                        android:textColor="@color/primary"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="1dp"
+                        android:layout_height="1dp"
+                        android:background="@color/primary" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

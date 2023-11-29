@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/primary">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:background="@drawable/background1"
+            android:backgroundTint="#66FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/imageKopi"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/kopi_in_touch_speciality_fococlipping_standard"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/namaKopi"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:text="KOPinTOUCH Speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/penyajianKopi"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:text="KOPinTOUCH Speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <Button
+                    android:id="@+id/pilihmenuini"
+                    android:layout_width="250dp"
+                    android:layout_height="25dp"
+                    android:text="Pilih Menu ini"
+                    android:background="@drawable/background1"
+                    android:backgroundTint="@color/yelloo"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

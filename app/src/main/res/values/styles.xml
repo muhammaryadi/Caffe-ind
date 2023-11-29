@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Tema dengan NoActionBar -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <!-- Tema default -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Atur properti lainnya sesuai kebutuhan -->
+    </style>
+
+</resources>

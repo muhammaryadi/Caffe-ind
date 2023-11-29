@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputDataKesehatanUser"
+    android:background="@color/primary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/watermark_signin">
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="20dp"
+                android:background="@drawable/caffeindwhite"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA DIRI"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:src="@drawable/datadiri_man"/>
+
+        <LinearLayout
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Masukkan data kesehatanmu"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Untuk memastikan Monitoring konsumsi kopimu dengan optimal, harap isi data kesehatanmu "/>
+
+
+            <Button
+                android:id="@+id/btnsubmitdatakesehatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background1"
+                android:backgroundTint="#F2C029"
+                android:textSize="18dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white">
+            </Button>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

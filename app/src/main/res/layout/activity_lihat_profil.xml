@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryCaffeTracker"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="115dp"
+      android:orientation="vertical"
+      android:background="@drawable/header2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/caffeindwhite"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Caffe-Tracker"
+        android:textSize="32dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:padding="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:backgroundTint="#E6E6E6"
+      android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Profil"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <LinearLayout
+          android:padding="15dp"
+          android:layout_width="match_parent"
+          android:layout_height="600dp"
+          android:orientation="vertical"
+          android:background="@drawable/background1"
+          android:backgroundTint="@color/white">
+        <ImageView
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circular_noprofile"
+            android:layout_marginBottom="10dp">
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Nama"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@id/tvnama"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Airin Ar"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Username"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvusername"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="aiirin"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Nomor HP"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvnomorhp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="081234567890"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Usia"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvusia"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="21"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Jenis Kelamin"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvjk"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Wanita"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Tinggi Badan"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvtb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="167 cm"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Berat Badan"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvbb"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="59 kg"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Status Kehamilan"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvsk"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="17dp"
+              android:text="Tidak"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Riwayat Penyakit"
+              android:textColor="@color/primary"/>
+          <TextView
+              android:id="@+id/tvrk"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Diabetes"
+              android:textSize="17dp"
+              android:textStyle="bold"/>
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#40000000" />
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

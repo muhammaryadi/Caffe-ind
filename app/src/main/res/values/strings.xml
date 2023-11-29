@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AIRIN</string>
+    <array name="jenisKelamin">
+        <item>Pilih jenis kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </array>
+    <array name="riwayatPenyakit">
+        <item>Pilih riwayat penyakit</item>
+        <item>Maag</item>
+        <item>Asam lambung</item>
+        <item>Penyakit jantung</item>
+        <item>Hipertensi</item>
+        <item>Diabetes</item>
+    </array>
+    <array name="statusKehamilan">
+        <item>Pilih status kehamilan</item>
+        <item>Ya</item>
+        <item>Tidak</item>
+    </array>
+    <array name="kuantiti">
+        <item>Pilih kuantiti</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </array>
+    <array name="sugar">
+        <item>Pilih gula</item>
+        <item>Less Sugar</item>
+        <item>Normal Sugar</item>
+        <item>Extra Sugar</item>
+    </array>
+    <array name="bahan">
+        <item>Pilih bahan</item>
+        <item>Cokelat</item>
+        <item>Matcha</item>
+        <item>Ice Cream</item>
+    </array>
+</resources>
